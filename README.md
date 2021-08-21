@@ -85,13 +85,7 @@ npm install –product
 
 至此完全配置完毕。
 
-#### 在线演示：
- ![输入图片说明](https://images.gitee.com/uploads/images/2021/0719/100637_5429f9d1_9240987.jpeg "ccplat-小程序QR.jpg")
-
  
-
-
-#### 如有疑问，欢迎骚扰联系我鸭： 
 #### 俺的微信:  cclinux0730
 
 
