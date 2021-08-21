@@ -2,16 +2,17 @@
 ### 项目介绍
 
 
-主要面向毕业后在某城市工作的校友，给大家构建一个充分交流的平台，自己的人生道路积累持续的人脉。
+- 在这里，你会看到最完整的校友名录，一键找到你想找的TA！
 
+- 在这里，你可以了解最新的校友活动，点击报名就可参加心仪的活动！
 
-### 特点
+- 在这里，你能掌握最全的学院资讯，足不出户掌握一手消息！
 
-无广告：本项目希望通过微信小程序，构建一款无广告，真实可靠的毕业校友通讯录。
-简约：只做最基础功能，不臃肿，主打内容极简，功能简洁直击痛点
-安全：保护校友的信息安全，隐私内容需要申请后可见。
-方便：上传自己的个人信息，方便在需要时取得联系。小程序无需下载APP随用随走。
+- 在这里，你可以收到校友专享的招聘信息，为你职业发展添砖加瓦！
 
+- 在这里，你会发现校友互助平台，帮助你对接需求和资源！
+
+ 
 
 ### 技术使用
 
@@ -21,14 +22,18 @@
 
 ### 项目效果截图
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1122/060621_49d4c43f_1810934.png "1.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1122/060627_55436a5e_1810934.png "2.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1122/060634_4ff55319_1810934.png "3.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1122/060641_80dacd4d_1810934.png "4.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1122/060648_39c1f771_1810934.png "5.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1122/060655_c5db02ba_1810934.png "6.png")
+![image](https://user-images.githubusercontent.com/89290868/130312252-7830b185-75b0-4716-8bdf-ac01b0445d23.png)
+![image](https://user-images.githubusercontent.com/89290868/130312251-7062b2c9-5fbd-42db-a8d6-3909ab489f2d.png)
+![image](https://user-images.githubusercontent.com/89290868/130312256-c290103e-3d97-43ed-bb9c-8ab6b8ce454f.png)
+![image](https://user-images.githubusercontent.com/89290868/130312259-d1a559e5-ac22-4c18-896c-49a04764cce7.png)
+![image](https://user-images.githubusercontent.com/89290868/130312265-6ce10246-226e-476c-a848-b99e223d9d85.png)
 
-      
+![image](https://user-images.githubusercontent.com/89290868/130312262-2a58da23-6a0d-4dde-bc86-ac332c5d27a5.png)
+![image](https://user-images.githubusercontent.com/89290868/130312267-99defc99-f383-46b7-8ac6-4095d775e6a1.png)
+![image](https://user-images.githubusercontent.com/89290868/130312270-f74143f9-9120-4f2a-a4ba-99a8b4821121.png)
+![image](https://user-images.githubusercontent.com/89290868/130312271-0bd08280-90a0-4002-b032-0fc67bb98fbd.png)
+
+
 
 ### 部署教程：
 
