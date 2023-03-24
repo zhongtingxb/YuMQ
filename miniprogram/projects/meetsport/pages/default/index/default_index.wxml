@@ -1,0 +1,38 @@
+<view class="main">
+	<view class="up">
+		<image mode="aspectFill" src="../../../images/home.jpg" />
+	</view>
+	<view class="down">
+		<view class="menu card-project shadow-project">
+			<view bindtap="url" wx:for="{{cateList}}" wx:key="k" data-url="../../enroll/all/enroll_all?id={{item.id}}" class="item">
+				<view class="item-inner">
+					<view class="img">
+						<image src="../../../images/menu/{{item.id}}.png" />
+					</view>
+					<view class="title">{{item.title}}</view>
+				</view>
+			</view>
+ 
+ 
+ 
+
+		</view>
+
+		<!-- List Begin -->
+		<view wx:if="{{!dataList}}" class="margin-top load loading text-l load-project"></view>
+
+		<view wx:else class="home-list-box">
+			<!-- List Begin -->
+			<import src="../../../../../tpls/public/base_list_tpl.wxml" />
+			<template is="baseListTpl" data="{{dataList,listMode:'leftbig1'}}" />
+			<!-- List END -->
+		 
+		</view>
+		<!-- List END -->
+	</view>
+</view>
+
+<block wx:if="{{skin.IS_SUB}}">
+	<import src="../../tpls/menu_tpl.wxml" />
+	<template is="menuTpl" data="{{curMenu:'home_index',returnHome:false}}" />
+</block> 

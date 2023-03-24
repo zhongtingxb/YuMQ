@@ -1,0 +1,101 @@
+{
+	"pages": [
+		"projects/meetsport/pages/default/index/default_index",
+		"projects/meetsport/pages/about/list/about_list",
+		"projects/meetsport/pages/about/index/about_index",
+		"projects/meetsport/pages/search/search",
+		"projects/meetsport/pages/my/index/my_index",
+		"projects/meetsport/pages/my/reg/my_reg",
+		"projects/meetsport/pages/my/edit/my_edit",
+		"projects/meetsport/pages/my/foot/my_foot",
+		"projects/meetsport/pages/my/fav/my_fav",
+		"projects/meetsport/pages/news/index/news_index",
+		"projects/meetsport/pages/news/detail/news_detail",
+		"projects/meetsport/pages/news/cate1/news_cate1",
+		"projects/meetsport/pages/news/cate2/news_cate2",
+		"projects/meetsport/pages/admin/news/list/admin_news_list",
+		"projects/meetsport/pages/admin/news/add/admin_news_add",
+		"projects/meetsport/pages/admin/news/edit/admin_news_edit",
+		"projects/meetsport/pages/admin/setup/about/admin_setup_about",
+		"projects/meetsport/pages/admin/setup/about_list/admin_setup_about_list",
+		"projects/meetsport/pages/admin/setup/qr/admin_setup_qr",
+		"projects/meetsport/pages/admin/index/home/admin_home",
+		"projects/meetsport/pages/admin/index/login/admin_login",
+		"projects/meetsport/pages/admin/content/admin_content",
+		"projects/meetsport/pages/admin/mgr/log/admin_log_list",
+		"projects/meetsport/pages/admin/mgr/edit/admin_mgr_edit",
+		"projects/meetsport/pages/admin/mgr/list/admin_mgr_list",
+		"projects/meetsport/pages/admin/mgr/add/admin_mgr_add",
+		"projects/meetsport/pages/admin/mgr/pwd/admin_mgr_pwd",
+		"projects/meetsport/pages/admin/user/list/admin_user_list",
+		"projects/meetsport/pages/admin/user/detail/admin_user_detail",
+		"projects/meetsport/pages/admin/user/export/admin_user_export",
+		"projects/meetsport/pages/enroll/all/enroll_all",
+		"projects/meetsport/pages/enroll/join/enroll_join",
+		"projects/meetsport/pages/enroll/my_join_list/enroll_my_join_list",
+		"projects/meetsport/pages/enroll/my_join_detail/enroll_my_join_detail",
+		"projects/meetsport/pages/enroll/join_edit/enroll_join_edit",
+		"projects/meetsport/pages/admin/enroll/list/admin_enroll_list",
+		"projects/meetsport/pages/admin/enroll/add/admin_enroll_add",
+		"projects/meetsport/pages/admin/enroll/edit/admin_enroll_edit",
+		"projects/meetsport/pages/admin/enroll/join_list/admin_enroll_join_list",
+		"projects/meetsport/pages/admin/enroll/export/admin_enroll_export",
+		"projects/meetsport/pages/admin/enroll/temp/admin_enroll_temp",
+		"projects/meetsport/pages/admin/enroll/day/admin_enroll_day",
+		"projects/meetsport/pages/admin/enroll/record/admin_enroll_record",
+		"projects/meetsport/pages/admin/enroll/scan/admin_enroll_scan",
+		"cmpts/public/form/form_set/field/form_set_field",
+		"cmpts/public/form/form_show/content/form_show_content",
+		"pages/test1/test1"
+	],
+	"window": {
+		"backgroundColor": "#f1f1f1",
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#ffffff",
+		"navigationBarTitleText": "文体场所预订小程序",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"custom": false,
+		"backgroundColor": "#FFFFFF",
+		"color": "#999999",
+		"selectedColor": "#55BF9B",
+		"list": [
+			{
+				"pagePath": "projects/meetsport/pages/default/index/default_index",
+				"text": "首页",
+				"iconPath": "/projects/meetsport/images/tabbar/home.png",
+				"selectedIconPath": "/projects/meetsport/images/tabbar/home_cur.png"
+			}, 
+			{
+				"pagePath": "projects/meetsport/pages/news/index/news_index",
+				"text": "最新通知",
+				"iconPath": "/projects/meetsport/images/tabbar/news.png",
+				"selectedIconPath": "/projects/meetsport/images/tabbar/news_cur.png"
+			}, 
+			{
+				"pagePath": "projects/meetsport/pages/enroll/my_join_list/enroll_my_join_list",
+				"text": "我的预订",
+				"iconPath": "/projects/meetsport/images/tabbar/day.png",
+				"selectedIconPath": "/projects/meetsport/images/tabbar/day_cur.png"
+			}, 
+			{
+				"pagePath": "projects/meetsport/pages/my/index/my_index",
+				"text": "个人中心",
+				"iconPath": "/projects/meetsport/images/tabbar/my.png",
+				"selectedIconPath": "/projects/meetsport/images/tabbar/my_cur.png"
+			}
+		]
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "获取你当前位置信息用于小程序位置接口的效果展示"
+		}
+	},
+	"usingComponents": {
+		"cmpt-comm-list": "/cmpts/public/list/comm_list_cmpt",
+		"cmpt-picker": "/cmpts/public/picker/picker_cmpt",
+		"cmpt-modal": "/cmpts/public/modal/modal_cmpt"
+	},
+	"sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,231 @@
+page {
+	--itemWidth: 182rpx;
+	--baseTimeColor: var(--projectColor);
+}
+
+.move-area {
+	box-sizing: border-box;
+	height: calc(100vh - (270rpx + constant(safe-area-inset-bottom)));
+	height: calc(100vh - (270rpx + env(safe-area-inset-bottom)));
+	width: 100vw;
+}
+
+
+.move-view {
+	background: #fff;
+	padding-bottom: 80rpx;
+	position: relative;
+	min-height: calc(100vh - (370rpx + constant(safe-area-inset-bottom)));
+	min-height: calc(100vh - (370rpx + env(safe-area-inset-bottom)));
+}
+
+.table-title {
+	align-items: stretch;
+	background: #fff;
+	display: flex;
+	height: 78rpx;
+	margin-left: 100rpx;
+	left: 102rpx;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	width: calc(100vw - 102rpx);
+}
+
+.table-title .item {
+	width: var(--itemWidth);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 24rpx;
+	color: #707070;
+	background-color: #fff;
+	font-weight: bold;
+}
+
+.time-table {
+	width: 100%;
+	padding: 0 5rpx;
+	display: flex;
+}
+
+.time-table:last-child {
+	border-bottom: 1rpx solid #ddd;
+}
+
+
+.time-table .left-list {
+	width: 100rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #fff;
+	position: sticky;
+	left: 0;
+	flex-shrink: 0;
+	z-index: 4;
+}
+
+.time-table .left-list .left {
+	height: 68rpx;
+	width: inherit;
+	text-align: right;
+	padding-top: 4rpx;
+	border-right: 1rpx solid #ddd;
+	border-left: 1rpx solid #ddd;
+	position: relative;
+	font-size: 24rpx;
+	color: #707070;
+}
+
+.time-table .left-list .left.top {
+	border-top: 0rpx solid #ddd !important;
+	border-bottom: 0 !important;
+}
+
+.time-table .left-list .left .x-top {
+	position: absolute;
+	top: -12rpx;
+	right: 18rpx;
+}
+
+.time-table .item-title {
+	height: 80rpx !important;
+	line-height: 80rpx;
+	font-weight: bold;
+	text-overflow: hidden;
+	overflow: hidden;
+	word-break: break-all;
+	background-color: #eaeef7 !important;
+	border-top: 1rpx solid #ddd;
+	text-align: center !important;
+}
+
+.time-table .right-list {
+	flex: 1;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.time-table .right-list .right-inner {
+	width: var(--itemWidth);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.time-table .right-list .right-inner .right {
+	height: 68rpx;
+	border-right: 1rpx solid #ddd;
+	border-top: 1rpx solid #ddd;
+	background-color: #fff;
+	color: #444;
+	padding: 0 10rpx;
+	width: 100%;
+	text-align: center;
+	font-size: 24rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	flex-shrink: 0;
+}
+
+.time-table .right-list .right-inner .right:nth-child(odd).border {
+	border-top-color: #bbb;
+}
+
+
+
+.time-table .right-list .right-inner .right.selected {
+	background: #e9f8f4;
+	border: 1rpx solid var(--baseTimeColor) !important;
+	color: #2bbd99;
+}
+
+
+.time-table .right-list .right-inner .right.selected::after {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAEnklEQVRYR82Yf0yUdRzH398H7h48QC6EpLwpRIN1D4gYWemWydCmUwzXLN1cyxq6pi3Mra3W1qq1NRcltumdRCv/yNgS0zQj786mlYUSQWc6hAw3EDDPDuS4457n056Hyzy84547nkM+/34/n/fn9f18f32eh+EOWp7DkqEXuWKJSfkMyAdYPoCZjCGVQKkgpLLJ5DP9WD0tzWMoA+OWgKgUQCEAbjyG+AMSWKHD+pgEbADRUwDSoilK3ADvP1rD6/mk5xhoO4DcaKBu9dUcUFnG4eTNIMhg98YK9l+cpoAFDutKIqoBIWeiYJoCCqcss+FjNSBarRWYZoAFJ6wVJFIdAKPWcLJezEtsdtbruV7XDiJsnYhOpEnFBCgcq02HTjwMYGGkBBMdjxpwrmOvSZSkbwGYJ5pcTXxUgHPtH+eL5G8EMFuNuBY+qgEDlfthMuFUH5LAnjs5Wcsa1Usin1Z2xeWYjAMRaktEXOICu2UnEV7SYj/FojEuYOAS/jKe91wk6LCAyvPlxW/xeiHGglXlLsCj6SZ4xBFsavkGw5JfcQkPaLN8BaA80gy1GF9vEvBa3iJF6lWnHUd6L96UDQmodCUSyS9F3K04bSbqildBx3HYd7kN77X/FJTzNsBAP+fUsmUKN8tMvQH1D61BJm/AWVcPNrZ8DZFofEDBbqkCoTrepUtkHD4pXoliYxZ6vTewtukA/vZ5bksbVEG5Ted5vlOLTjjSBF/PW4R1JgEjkohnmw+j1d0XMiQI0Gyzbmag3ZHEJzpenpWHd82PKzJvnT+J+u4/wkr+D0hggt3SrvYDh+cS8MTd9ykXgdPdh46h66q4H0iZgX0PrkZSQiIaui/gjfPfjxt3E7DQbl0sEZ1QlSVwP+0sXIbSzGwM+L14uqkBXR73uOFGHY8vStZg1rRUON392NB8CD5JVAco2K21IHpeLaDsl5Kgx/6SJ5GdbET74DWsP3sQHnH0gh1rHBj2FC3HwhkmuHzDyqHo8Q5GTKdUUL5apg8ZrjDGpkeMGOOQazDi85IKGBJ1ONbbge1OW0iJl3MX4IU58yCShE0tR3Ha1a0qlQIo2PasAtghVREhnJZl5uD9gjIwxrCj/TQ+vdwa5FWWmYMPAuPVF39GXZf8gqqzUUC7tRpEVepCQntty30YG+cUwU8SKn89gl+u9yiOOQajsg2SE/Vo7OvEtt+PR5UmUEFLC4CiqCLHOMt7zDpvBR5Jn4VrPo+yxwb8PuwvqUBOshEdN1xYd+YghsSRqNIw+ReYTkJvpL9MalTv0iUpT9c9SSloc/eh3zuknPJBvw/PNDXgkucfNTJBPqzg+N6lxCT5Q0gTE1Iz8Nn8cvAJiYoeyd1uWyMcV/+KRX+AmW2WLQzYFUt0uJiKrHy8bV6sDFsuNWNX55lY5Z1MsFlkuC2xKoSLezF7PjL4ZLxz4RQkBHcoUeT6kAk2ayNAS6MImixXkRgrkpe4lY3+ip1axrGPnEsqt8pL/CeA7ClFx2Cjqz0rzq190yd3MP0gZEwRQBEc20393a/IcDKTXMFhAPwdA2QYAKELwHfEWO250krnrSz/ApsKi7YtWrW5AAAAAElFTkSuQmCC");
+	background-size: 100% 100%;
+	bottom: -2rpx;
+	content: "";
+	display: block;
+	height: 28rpx;
+	position: absolute;
+	right: -2rpx;
+	width: 28rpx;
+}
+
+.time-table .right-list .right-inner .right.selected-first {
+	border-top: 1rpx solid #ddd !important;
+}
+
+.time-table .right-list .right-inner .right.error {
+	background-color: #f8f8f8;
+	color: #ccc;
+}
+
+.time-table .right-list .right-inner .right.used {
+	border-top: 1rpx solid #fcf8e3;
+	background-color: #fcf8e3;
+	color: #000;
+	padding: 0;
+	line-height: 60rpx !important;
+}
+
+.time-table .right-list .right-inner .right.used .content-cut-one1 {
+	text-overflow: unset;
+	overflow: hidden;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+}
+
+.time-table .right-list .right-inner .right.used-first {
+	border-top: 1rpx solid #ddd !important;
+	background-color: #fcf8e3;
+}
+
+.time-submit {
+	width: 100%;
+	position: fixed;
+	bottom: 35rpx;
+	padding: 30rpx 30rpx;
+	z-index: 999; 
+}
+
+.time-submit .inner {
+	width: 100%;
+	background-color: var(--baseTimeColor);
+	font-size: 32rpx;
+	border-radius: 15rpx;
+	padding: 15rpx 0;
+	text-align: center;
+	color: #fff;
+}
+
+.form-group {
+	align-items: baseline;
+	border-bottom: 1rpx solid #eee;
+	min-height: 80rpx; 
+	align-items: center;
+}
+
+.form-group .left {
+	width: 150rpx;
+	flex-shrink: 0;
+	font-weight: bold;
+	margin-right: 10rpx;
+}
+
+.form-group .right {
+	flex: 1;
+	text-align: left;
+	color: #666;
+}

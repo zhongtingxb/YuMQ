@@ -1,0 +1,8 @@
+{
+	"usingComponents": {  
+		"time_select": "../../../cmpts/time_select/time_select_cmpt",
+		"date_select": "../../../cmpts/date_select/date_select_cmpt"
+	},
+	"disableScroll":true, 
+	"navigationBarTitleText": "场地预订"
+}
