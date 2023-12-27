@@ -2,7 +2,7 @@ const timeHelper = require('../../../../helper/time_helper.js');
 const pageHelper = require('../../../../helper/page_helper.js');
 const calendarLib = require('../calendar_lib.js');
 
-/*#### 父组件日历颜色定义*/
+/*#### 父组 件日历颜色定义*/
 /* 整体颜色 */
 //--calendarPageColor: #F0F4FF;
 /* 加重颜色*/
