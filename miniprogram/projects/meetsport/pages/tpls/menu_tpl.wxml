@@ -1,0 +1,33 @@
+<template name="menuTpl"> 
+	<view class="tab-bar" >   
+		<view wx:if="{{returnHome}}" class="tab-bar-home" bindtap="url" data-type="relaunch"
+			data-url="/pages/home/index/home_index">
+			<text class="tab-bar-home-text icon-homefill text-grey"></text>
+		</view>
+
+		<view class="tab-bar-border"></view>
+		<view class="tab-bar-item" bindtap="url" data-type="relaunch" data-url="/projects/meetsport/pages/default/index/default_index">
+			<image class="tab-icon" src="/projects/meetsport/images/tabbar/home{{curMenu=='home_index'?'_cur':''}}.png"></image>
+			<view class="tab-text {{curMenu=='home_index'?'menu-project':''}}">首页</view>
+		</view>
+
+		<view class="tab-bar-item" bindtap="url" data-type="relaunch" data-url="/projects/meetsport/pages/news/index/news_index">
+			<image class="tab-icon" src="/projects/meetsport/images/tabbar/news{{curMenu=='news_index'?'_cur':''}}.png"></image>
+			<view class="tab-text {{curMenu=='news_index'?'menu-project':''}}">最新通知</view>
+		</view> 
+	 
+ 
+
+		<view   class="tab-bar-item" bindtap="url" data-type="relaunch" data-url="/projects/meetsport/pages/enroll/my_join_list/enroll_my_join_list">
+			<image class="tab-icon" src="/projects/meetsport/images/tabbar/day{{curMenu=='my_enroll'?'_cur':''}}.png"></image>
+			<view class="tab-text {{curMenu=='my_enroll'?'menu-project':''}}">我的预订</view>
+		</view>
+	 
+		<view class="tab-bar-item" bindtap="url" data-type="relaunch" data-url="/projects/meetsport/pages/my/index/my_index">
+			<image class="tab-icon" src="/projects/meetsport/images/tabbar/my{{curMenu=='my_index'?'_cur':''}}.png"></image>
+			<view class="tab-text {{curMenu=='my_index'?'menu-project':''}}">个人中心</view>
+		</view>
+
+
+	</view>
+</template>
