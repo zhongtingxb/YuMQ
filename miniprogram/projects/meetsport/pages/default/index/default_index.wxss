@@ -1,0 +1,82 @@
+@import "../../../../../style/public/comm_box_list.wxss";
+@import "../../../style/skin.wxss";
+
+.main {
+	padding: 0rpx 0rpx 100rpx;
+}
+
+.up {
+	width: 100%;
+}
+
+.up image {
+	width: 100%;
+	height: 450rpx;
+	border-radius: 0% 0% 72% 39% / 10% 11% 16% 0%;
+	box-shadow: 0rpx 15rpx 8px -10rpx rgba(179, 178, 180, 0.8);
+}
+
+.down {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10rpx 30rpx;
+	margin-top: -130rpx;
+	z-index: 9999;
+}
+
+.menu {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #fff;
+	padding: 20rpx 10rpx;
+	border-radius: 20rpx;
+}
+
+.menu .item {
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 180rpx;
+
+}
+
+.menu .item .item-inner {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.menu .item-inner .img {
+	width: 85rpx;
+	height: 85rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;  
+}
+
+.menu .item-inner .img image {
+	width: 65rpx;
+	height: 65rpx;
+}
+
+.menu .item-inner .title {
+	margin-top: 20rpx;
+	font-size: 26rpx;
+	color: #000;
+}
+
+.home-list-box {
+	width: 100%;
+	margin-bottom: 200rpx;
+	margin-top: 20rpx;
+}
+
+.home-list-box .comm-list-box {
+	padding: 20rpx 0rpx 30rpx 0rpx;
+	overflow: unset;
+}

@@ -1,0 +1,10 @@
+{
+	"usingComponents": { 
+		"time_select": "../../../../cmpts/time_select/time_select_cmpt",
+		"date_select": "/cmpts/public/calendar/date_select/date_select_cmpt"
+	},
+	"enablePullDownRefresh": true,
+	"navigationBarBackgroundColor": "#2499f2",
+	"navigationBarTextStyle": "white",
+	"navigationBarTitleText": "预订名单"
+}
